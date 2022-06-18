@@ -246,8 +246,18 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: teal;
-    display: block;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: var(--accent-text-color);
+}
+
+.team-soc-link:hover .team-soc-icon {
+    fill: #FFFFFF;
 }
 
 .workers {
