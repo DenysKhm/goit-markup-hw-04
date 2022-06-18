@@ -24,6 +24,7 @@ h6 {
 ul {
     margin: 0;
     padding-left: 0;
+    list-style: none;
 }
 img {
     display: block;
@@ -69,9 +70,6 @@ img {
 }
 
 .logo-header {color: black;}
-
-/* удалили точки списка */
-ul {list-style: none;}
 
 /* цвет навигации сайта */
 .nav-site {
@@ -135,6 +133,14 @@ ul {list-style: none;}
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+        ), 
+    url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     }
 .hero-title {
     color: #FFFFFF;
@@ -216,10 +222,10 @@ ul {list-style: none;}
     padding: 0;
 }
 
-.team-title {
+.team-section-title {
     margin-bottom: 50px;
 }
-.team-title, .job-title {
+.team-section-title, .job-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -227,6 +233,23 @@ ul {list-style: none;}
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-soc-item + .team-soc-item {
+    margin-left: 10px;
+}
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: teal;
+    display: block;
+}
+
 .workers {
     display: flex;
     gap: 30px;
@@ -257,6 +280,7 @@ ul {list-style: none;}
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 
 /* футер */
@@ -381,7 +405,7 @@ ul {list-style: none;}
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-    padding: 30px 30px;
+    padding: 20px 24px;
 }
 
 .portfolio-title {
