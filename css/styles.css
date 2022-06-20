@@ -115,6 +115,13 @@ img {
     padding-bottom: 32px;
     display: inline-block;
 }
+.contact-link-icon {
+   margin-right: 10px;
+}
+.contact-link-icon:hover,
+.contact-link-icon:focus {
+    color: var(--accent-text-color);
+}
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-text-color);
@@ -124,9 +131,11 @@ img {
     margin-right: 50px;
 }
 
-.header-contacts {
-    
-}
+.header-contacts-item {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+} 
 
 /* первая секция с кнопкой */
 .hero {
@@ -191,6 +200,15 @@ img {
 .services-item {
     width: 270px;
     flex-basis: calc((100% - 90px) / 4);
+}
+.services-icon-list {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 .services-title {
     color: var(--title-text-color);
@@ -292,7 +310,29 @@ img {
     letter-spacing: 0.03em;
     margin-bottom: 16px;
 }
+/* --------------------КЛИЕНТЫ-------------------- */
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
 
+.clients-list-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients-items {
+    fill: rgba(175, 177, 184, 1);
+}
+
+.clients-items:hover,
+.clients-items:focus {
+    fill: var(--accent-text-color);
+}
 /* футер */
 .contacts .link-footer:hover,
 .contacts .link-footer:focus {
