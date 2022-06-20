@@ -411,7 +411,9 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
+.soc-links-footer {
+    padding-top: 20px;
+}
 .soc-links-footer-title {
     color: #FFFFFF;
     font-weight: 700;
@@ -421,7 +423,6 @@ img {
     text-transform: uppercase;
     margin: 0;
     margin-bottom: 20px;
-    padding-top: 20px;
 }
 
 .soc-links-footer-list {
